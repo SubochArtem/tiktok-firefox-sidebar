@@ -7,9 +7,23 @@ function persistCookie(value) {
   return value;
 }
 
+const EXT_ORIGIN = browser.runtime.getURL("");
+const TIKTOK_HOST = /^https?:\/\/([^/]+\.)?(tiktok|tiktokv)\.com\//;
+
+// Only relax framing protection when the frame is nested exclusively inside
+// this extension's sidebar (optionally via TikTok frames). Any other site that
+// embeds TikTok keeps TikTok's anti-clickjacking headers.
+function embeddedBySidebar(details) {
+  const anc = details.frameAncestors;
+  if (!anc || anc.length === 0) return false;
+  const top = anc[anc.length - 1].url;
+  if (!top.startsWith(EXT_ORIGIN)) return false;
+  return anc.slice(0, -1).every((a) => TIKTOK_HOST.test(a.url));
+}
+
 // Allow TikTok to be embedded in the sidebar iframe.
 browser.webRequest.onHeadersReceived.addListener(
-  (details) => ({
+  (details) => !embeddedBySidebar(details) ? {} : ({
     responseHeaders: details.responseHeaders
       .filter((h) => h.name.toLowerCase() !== "x-frame-options")
       .map((h) => {
