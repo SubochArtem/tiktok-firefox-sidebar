@@ -3,11 +3,18 @@
   "name": "TikTok Sidebar",
   "version": "0.1.0",
   "description": "Watch TikTok in the Firefox sidebar.",
-  "icons": { "48": "icons/icon-48.png", "96": "icons/icon-96.png" },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
   "browser_specific_settings": {
     "gecko": {
       "id": "tiktok-sidebar@example.local",
-      "data_collection_permissions": { "required": ["none"] }
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   },
   "permissions": [
@@ -18,15 +25,35 @@
     "*://*.tiktokcdn.com/*",
     "*://*.tiktokv.com/*"
   ],
-  "background": { "scripts": ["background.js"] },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
   "browser_action": {
     "default_title": "Toggle TikTok sidebar",
-    "default_icon": { "48": "icons/icon-48.png" }
+    "default_icon": {
+      "48": "icons/icon-48.png"
+    }
   },
   "sidebar_action": {
     "default_title": "TikTok",
     "default_panel": "sidebar.html",
-    "default_icon": { "48": "icons/icon-48.png" },
+    "default_icon": {
+      "48": "icons/icon-48.png"
+    },
     "open_at_install": true
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.tiktok.com/*"
+      ],
+      "js": [
+        "hide-app-banner.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ]
 }
