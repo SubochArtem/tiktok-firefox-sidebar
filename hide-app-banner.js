@@ -1,3 +1,5 @@
+// Run only inside an embedded frame (the sidebar), never in a normal TikTok tab.
+if (window.top !== window) {
 // Remove TikTok's "continue in the app" overlays/banners.
 const RE = /(open|continue|get|use|watch)[^.]{0,40}(tiktok )?app|tiktok app|open tiktok/i;
 
@@ -14,5 +16,11 @@ function sweep() {
     }
   }
 }
-new MutationObserver(sweep).observe(document.documentElement, { childList: true, subtree: true });
+let timer = null;
+new MutationObserver(() => {
+  if (timer) return;
+  timer = setTimeout(() => { timer = null; sweep(); }, 500); // debounce
+}).observe(document.documentElement, { childList: true, subtree: true });
 sweep();
+
+}
