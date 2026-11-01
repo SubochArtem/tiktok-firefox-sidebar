@@ -11,5 +11,14 @@
   "devDependencies": {
     "web-ext": "^10.8.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "webExt": {
+    "ignoreFiles": [
+      "docs",
+      "README.md",
+      "package.json",
+      "package-lock.json",
+      "web-ext-artifacts"
+    ]
+  }
 }
