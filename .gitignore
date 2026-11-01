@@ -4,3 +4,5 @@ web-ext-artifacts/
 .DS_Store
 .firefox-profile/
 .env
+.amo-upload-uuid
+web-ext-artifacts/
