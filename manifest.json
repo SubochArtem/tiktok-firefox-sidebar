@@ -9,7 +9,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "tiktok-sidebar@example.local",
+      "id": "tiktok-sidebar@tiktik.local",
       "data_collection_permissions": {
         "required": [
           "none"
