@@ -33,3 +33,6 @@ browser.webRequest.onBeforeSendHeaders.addListener(
   { urls: TT_URLS },
   ["blocking", "requestHeaders"]
 );
+
+// Toolbar button toggles the sidebar.
+browser.browserAction.onClicked.addListener(() => browser.sidebarAction.toggle());
