@@ -23,3 +23,7 @@ CSP `frame-ancestors` from TikTok sub-frame responses.
   1. Create API keys at https://addons.mozilla.org/developers/addon/api/key/
   2. `cp .env.example .env`, fill in `WEB_EXT_API_KEY` (JWT issuer) and `WEB_EXT_API_SECRET` (JWT secret), then `npm run sign`
   3. Open the `.xpi` from `web-ext-artifacts/` in Firefox (File → Open File) and confirm.
+
+## License
+
+MIT, see [LICENSE](LICENSE). Unofficial project, not affiliated with or endorsed by TikTok.
