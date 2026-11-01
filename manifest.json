@@ -22,7 +22,6 @@
     "webRequestBlocking",
     "storage",
     "*://*.tiktok.com/*",
-    "*://*.tiktokcdn.com/*",
     "*://*.tiktokv.com/*",
     "*://apps.apple.com/*",
     "*://itunes.apple.com/*",
