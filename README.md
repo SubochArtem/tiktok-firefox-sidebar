@@ -71,7 +71,6 @@ The extension collects no data and sends nothing anywhere except to TikTok itsel
 
 - TikTok changes its pages often. Auto-scroll and the banner remover rely on TikTok's page structure and may need updates.
 - If login doesn't stick, log in once on tiktok.com in a normal tab. Firefox's cookie partitioning can affect third-party frames.
-- Embedding TikTok this way and automating scrolling may go against TikTok's Terms of Service. Use at your own risk; a public Mozilla store listing is unlikely to be approved.
 
 ## Development
 
