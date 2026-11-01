@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "TikTok Sidebar",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Watch TikTok in the Firefox sidebar.",
   "icons": {
     "48": "icons/icon-48.png",
@@ -53,7 +53,8 @@
         "*://*.tiktok.com/*"
       ],
       "js": [
-        "hide-app-banner.js"
+        "hide-app-banner.js",
+        "autoscroll.js"
       ],
       "all_frames": true,
       "run_at": "document_idle"

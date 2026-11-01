@@ -1,2 +1,4 @@
-html, body { margin: 0; height: 100%; overflow: hidden; background: #000; }
-iframe { border: 0; width: 100%; height: 100%; display: block; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: #000; display: flex; flex-direction: column; }
+#bar { flex: none; padding: 4px 8px; background: #161823; color: #fff; font: 13px sans-serif; }
+#bar label { cursor: pointer; user-select: none; }
+iframe { border: 0; width: 100%; flex: 1; min-height: 0; display: block; }
