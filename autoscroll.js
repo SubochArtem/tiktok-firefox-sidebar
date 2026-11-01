@@ -1,3 +1,5 @@
+// Run only inside an embedded frame (the sidebar), never in a normal TikTok tab.
+if (window.top !== window) {
 // Auto-scroll: when the playing video finishes, go to the next one.
 let enabled = false;
 let lastAdvance = 0;
@@ -49,3 +51,5 @@ function onVideoEvent(e) {
 // Media events don't bubble, so listen in the capture phase.
 document.addEventListener("timeupdate", onVideoEvent, true);
 document.addEventListener("ended", onVideoEvent, true);
+
+}
