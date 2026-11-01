@@ -1,9 +1,16 @@
 const TT_URLS = ["*://*.tiktok.com/*", "*://*.tiktokv.com/*"];
 
-// Session cookies are dropped when the browser closes; make them persistent
-// (1 year) so the login survives restarts.
+// Session cookies are dropped when the browser closes. Make only the login
+// cookies persistent (30 days) so the login survives restarts.
+const LOGIN_COOKIES = new Set([
+  "sessionid", "sessionid_ss", "sid_tt", "uid_tt", "uid_tt_ss",
+  "sid_ucp_v1", "ssid_ucp_v1",
+]);
 function persistCookie(value) {
-  if (!/;\s*(max-age|expires)=/i.test(value)) value += "; Max-Age=31536000";
+  const name = value.split("=")[0].trim().toLowerCase();
+  if (LOGIN_COOKIES.has(name) && !/;\s*(max-age|expires)=/i.test(value)) {
+    value += "; Max-Age=2592000";
+  }
   return value;
 }
 
