@@ -21,5 +21,5 @@ CSP `frame-ancestors` from TikTok sub-frame responses.
 - `npm start` — runs Firefox with a persistent profile (`.firefox-profile/`), so your TikTok login is kept between runs.
 - Temporary add-ons (`about:debugging`, `npm start`) disappear when that Firefox closes. For a permanent install in your normal Firefox:
   1. Create API keys at https://addons.mozilla.org/developers/addon/api/key/
-  2. `WEB_EXT_API_KEY=... WEB_EXT_API_SECRET=... npm run sign`
+  2. `cp .env.example .env`, fill in `WEB_EXT_API_KEY` (JWT issuer) and `WEB_EXT_API_SECRET` (JWT secret), then `npm run sign`
   3. Open the `.xpi` from `web-ext-artifacts/` in Firefox (File → Open File) and confirm.
