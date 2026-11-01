@@ -1,6 +1,6 @@
 {
   "name": "tiktok-sidebar",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "start": "web-ext run --firefox-profile=.firefox-profile --profile-create-if-missing --keep-profile-changes",
@@ -9,6 +9,6 @@
     "sign": "node --env-file=.env ./node_modules/.bin/web-ext sign --channel=unlisted"
   },
   "devDependencies": {
-    "web-ext": "^8.0.0"
+    "web-ext": "^10.8.0"
   }
 }
