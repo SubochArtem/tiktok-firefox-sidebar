@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "TikTok Sidebar",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Watch TikTok in the Firefox sidebar.",
   "icons": {
     "48": "icons/icon-48.png",
