@@ -46,3 +46,14 @@ browser.webRequest.onBeforeSendHeaders.addListener(
 
 // Toolbar button toggles the sidebar.
 browser.browserAction.onClicked.addListener(() => browser.sidebarAction.toggle());
+
+// TikTok redirects the frame to an app store after a few videos; those pages
+// refuse to be embedded, so cancel the navigation and keep the feed visible.
+browser.webRequest.onBeforeRequest.addListener(
+  () => ({ cancel: true }),
+  {
+    urls: ["*://apps.apple.com/*", "*://itunes.apple.com/*", "*://play.google.com/*"],
+    types: ["sub_frame"],
+  },
+  ["blocking"]
+);
