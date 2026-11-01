@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "TikTok Sidebar",
+  "version": "0.1.0",
+  "description": "Watch TikTok in the Firefox sidebar.",
+  "icons": { "48": "icons/icon-48.png", "96": "icons/icon-96.png" },
+  "browser_specific_settings": {
+    "gecko": { "id": "tiktok-sidebar@example.local" }
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "*://*.tiktok.com/*",
+    "*://*.tiktokcdn.com/*",
+    "*://*.tiktokv.com/*"
+  ],
+  "background": { "scripts": ["background.js"] },
+  "browser_action": {
+    "default_title": "Toggle TikTok sidebar",
+    "default_icon": { "48": "icons/icon-48.png" }
+  },
+  "sidebar_action": {
+    "default_title": "TikTok",
+    "default_panel": "sidebar.html",
+    "default_icon": { "48": "icons/icon-48.png" },
+    "open_at_install": true
+  }
+}
