@@ -5,11 +5,12 @@
   "description": "Watch TikTok in the Firefox sidebar.",
   "icons": {
     "48": "icons/icon-48.png",
-    "96": "icons/icon-96.png"
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "tiktok-sidebar@tiktik.local",
+      "id": "tiktok-sidebar@artem.dev",
       "data_collection_permissions": {
         "required": [
           "none"
