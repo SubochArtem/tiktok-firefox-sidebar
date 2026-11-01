@@ -1,6 +1,6 @@
 const frame = document.getElementById("tt");
 browser.runtime.onMessage.addListener((msg, sender) => {
-  // Accept only messages from our own background page (not content scripts/tabs).
+  // Ignore messages from content scripts or other extensions.
   if (sender.id !== browser.runtime.id || sender.tab) return;
   if (msg && msg.type === "reload-feed") frame.src = "https://www.tiktok.com/";
 });
