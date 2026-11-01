@@ -23,7 +23,10 @@
     "storage",
     "*://*.tiktok.com/*",
     "*://*.tiktokcdn.com/*",
-    "*://*.tiktokv.com/*"
+    "*://*.tiktokv.com/*",
+    "*://apps.apple.com/*",
+    "*://itunes.apple.com/*",
+    "*://play.google.com/*"
   ],
   "background": {
     "scripts": [
