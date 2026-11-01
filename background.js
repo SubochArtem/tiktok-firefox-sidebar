@@ -43,3 +43,6 @@ browser.webRequest.onBeforeRequest.addListener(
   },
   ["blocking"]
 );
+
+// Toolbar button toggles the sidebar.
+browser.browserAction.onClicked.addListener(() => browser.sidebarAction.toggle());
