@@ -1,0 +1,18 @@
+{
+  "extName": {
+    "message": "Kenar Çubuğunda TikTok",
+    "description": "Extension name (keep the brand word TikTok)."
+  },
+  "extDescription": {
+    "message": "Gezinirken TikTok'u Firefox kenar çubuğunda izleyin. İsteğe bağlı olarak sonraki videoya otomatik kaydırma. Resmi değildir, TikTok ile bağlantısı yoktur.",
+    "description": "Short description; also used as the AMO summary (max 250 chars)."
+  },
+  "actionTitle": {
+    "message": "TikTok kenar çubuğunu aç/kapat",
+    "description": "Toolbar button tooltip."
+  },
+  "autoScroll": {
+    "message": "Otomatik kaydırma",
+    "description": "Checkbox label at the top of the sidebar."
+  }
+}

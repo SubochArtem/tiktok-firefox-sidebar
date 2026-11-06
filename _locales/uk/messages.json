@@ -1,0 +1,18 @@
+{
+  "extName": {
+    "message": "TikTok у бічній панелі",
+    "description": "Extension name (keep the brand word TikTok)."
+  },
+  "extDescription": {
+    "message": "Дивіться TikTok у бічній панелі Firefox, поки користуєтеся браузером. Автопрокручування до наступного відео за бажанням. Неофіційне, не пов’язане з TikTok.",
+    "description": "Short description; also used as the AMO summary (max 250 chars)."
+  },
+  "actionTitle": {
+    "message": "Показати/сховати бічну панель TikTok",
+    "description": "Toolbar button tooltip."
+  },
+  "autoScroll": {
+    "message": "Автопрокручування",
+    "description": "Checkbox label at the top of the sidebar."
+  }
+}

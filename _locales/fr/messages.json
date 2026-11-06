@@ -1,0 +1,18 @@
+{
+  "extName": {
+    "message": "TikTok dans la barre latérale",
+    "description": "Extension name (keep the brand word TikTok)."
+  },
+  "extDescription": {
+    "message": "Regardez TikTok dans la barre latérale de Firefox pendant que vous naviguez. Défilement automatique optionnel. Non officiel, sans lien avec TikTok.",
+    "description": "Short description; also used as the AMO summary (max 250 chars)."
+  },
+  "actionTitle": {
+    "message": "Afficher/masquer la barre latérale TikTok",
+    "description": "Toolbar button tooltip."
+  },
+  "autoScroll": {
+    "message": "Défilement auto",
+    "description": "Checkbox label at the top of the sidebar."
+  }
+}
