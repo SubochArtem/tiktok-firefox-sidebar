@@ -1,8 +1,16 @@
 # TikTok Sidebar
 
+![Mozilla Add-on](https://img.shields.io/amo/v/tiktok-sidebar)
+![Add-on rating](https://img.shields.io/amo/rating/tiktok-sidebar)
+![Add-on downloads](https://img.shields.io/amo/dw/tiktok-sidebar)
+![Add-on users](https://img.shields.io/amo/users/tiktok-sidebar)
+![License](https://img.shields.io/github/license/SubochArtem/tiktok-firefox-sidebar)
+
 A Firefox extension that shows the TikTok feed in the browser sidebar, so you can watch while you work in the main window.
 
 > Unofficial project. Not affiliated with or endorsed by TikTok. "TikTok" and its logo are trademarks of their owner.
+
+[![Get the Add-on](https://raw.githubusercontent.com/semanticdata/text-revealer-firefox-extension/master/firefox.png)](https://addons.mozilla.org/en-US/firefox/addon/tiktok-sidebar/)
 
 ## Screenshots
 
@@ -20,6 +28,10 @@ A Firefox extension that shows the TikTok feed in the browser sidebar, so you ca
 - Localized into 11 languages: en, es, pt-BR, de, fr, ru, uk, pl, it, ja, tr. Translated AMO listing texts are in `docs/listing/`.
 
 ## Install
+
+### From Firefox Add-ons (recommended)
+
+Install the official release from [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/tiktok-sidebar/).
 
 ### Option A: signed `.xpi` (permanent)
 
