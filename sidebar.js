@@ -1,3 +1,7 @@
+for (const el of document.querySelectorAll("[data-i18n]")) {
+  el.textContent = browser.i18n.getMessage(el.dataset.i18n);
+}
+
 const frame = document.getElementById("tt");
 browser.runtime.onMessage.addListener((msg, sender) => {
   // Ignore messages from content scripts or other extensions.

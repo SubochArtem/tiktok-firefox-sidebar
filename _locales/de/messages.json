@@ -1,0 +1,18 @@
+{
+  "extName": {
+    "message": "TikTok in der Seitenleiste",
+    "description": "Extension name (keep the brand word TikTok)."
+  },
+  "extDescription": {
+    "message": "TikTok in der Firefox-Seitenleiste ansehen, während du surfst. Optional automatisch zum nächsten Video scrollen. Inoffiziell, nicht mit TikTok verbunden.",
+    "description": "Short description; also used as the AMO summary (max 250 chars)."
+  },
+  "actionTitle": {
+    "message": "TikTok-Seitenleiste ein-/ausblenden",
+    "description": "Toolbar button tooltip."
+  },
+  "autoScroll": {
+    "message": "Automatisch scrollen",
+    "description": "Checkbox label at the top of the sidebar."
+  }
+}

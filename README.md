@@ -17,6 +17,7 @@ A Firefox extension that shows the TikTok feed in the browser sidebar, so you ca
 - Hides the "continue in the TikTok app" prompts.
 - Blocks TikTok's redirects to the App Store / Google Play (they can't be embedded) and reloads the feed instead of leaving a blank panel.
 - Keeps you logged in: login cookies are made persistent for 30 days.
+- Localized into 11 languages: en, es, pt-BR, de, fr, ru, uk, pl, it, ja, tr. Translated AMO listing texts are in `docs/listing/`.
 
 ## Install
 

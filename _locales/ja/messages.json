@@ -1,0 +1,18 @@
+{
+  "extName": {
+    "message": "TikTok をサイドバーで",
+    "description": "Extension name (keep the brand word TikTok)."
+  },
+  "extDescription": {
+    "message": "ブラウジングしながら Firefox のサイドバーで TikTok を視聴。次の動画への自動スクロールにも対応。非公式であり、TikTok とは関係ありません。",
+    "description": "Short description; also used as the AMO summary (max 250 chars)."
+  },
+  "actionTitle": {
+    "message": "TikTok サイドバーの表示/非表示",
+    "description": "Toolbar button tooltip."
+  },
+  "autoScroll": {
+    "message": "自動スクロール",
+    "description": "Checkbox label at the top of the sidebar."
+  }
+}
